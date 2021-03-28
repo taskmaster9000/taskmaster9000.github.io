@@ -42,16 +42,21 @@ li {
   margin-bottom:5px
 }
 
+.next {
+  float:right;
+  color:blanchedalmond;
+}
+
 #t-input {
   width:100%
 }
 
 .header {
-  background-color:#f3f3f3;
+  background-color:#ffffff;
   padding:10px 30px;
   color:#001418;
   text-align:center;
-  font-size:130%
+  font-size:120%
 }
 
 .row {
@@ -83,4 +88,5 @@ li {
 
 @media screen and (max-width:640px) {
   .row{flex-direction:column}
+  .next{transform: rotate(90deg)}
 }
