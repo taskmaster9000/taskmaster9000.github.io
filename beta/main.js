@@ -2,9 +2,8 @@ function newtask(task) {
     if (task.value) {
     
         var t = document.createElement("li");
-        t.innerHTML = String(task.value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').concat('<span class="next">></span>');
+        t.innerHTML = '<span class="task">'.concat(String(task.value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').concat('</span><span class="next">></span>'));
         task.value = "";
-        console.log(t);
         document.getElementById("tdl").appendChild(t);
         refreshnex();
 
@@ -20,7 +19,6 @@ function refreshnex() {
     var cn = this.parentElement.parentElement.id;
     var elem = this.parentElement;
     if (cn === "tdl") {
-        console.log('yes');
         document.getElementById("idl").appendChild(elem);
     }
     else if (cn === "idl") {
@@ -42,6 +40,11 @@ function refreshnex() {
 
 document.addEventListener("DOMContentLoaded", function() {
     refreshnex();
+    var cls = document.getElementById("clear-ddl");
+    cls.onclick = function() {
+        var ddl = document.getElementById("ddl");
+        ddl.innerHTML = "";
+    }
 });
 
 

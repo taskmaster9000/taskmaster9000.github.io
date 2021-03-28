@@ -3,6 +3,15 @@
   box-sizing:border-box
 }
 
+a {
+  text-decoration: none;
+  color: #9c9c9c;
+}
+
+a:hover {
+  color: #001418;
+}
+
 ul {
   list-style-type:none
 }
@@ -21,19 +30,19 @@ ul li {
 }
 
 ul li:hover {
-  filter:brightness(106%)
+  filter:brightness(116%)
 }
 
 #to-do ul li {
-  background:#e04d4d
+  background:rgb(255, 137, 137)
 }
 
 #in-do ul li {
-  background:#d6ce57
+  background:#fffbc5
 }
 
 #do-do ul li {
-  background:#9dc060
+  background:#ddffa3
 }
 
 li {
@@ -43,8 +52,14 @@ li {
 }
 
 .next {
+  width:29px;
+  text-align: center;
   float:right;
-  color:blanchedalmond;
+  color:rgb(109, 109, 109);
+}
+
+.next:hover {
+  color: black;
 }
 
 #t-input {
@@ -65,6 +80,26 @@ li {
   justify-content:space-evenly
 }
 
+.quote {
+  width: 100%;
+  text-align: center;
+  font-size: 26px;
+  color: rgb(190, 190, 190);
+}
+
+.footer {
+  margin-top: 10px;
+  padding: 0 5px;
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap-reverse;
+  justify-content:space-between;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
+}
+
 .col {
   float:left;
   width:100%;
@@ -75,18 +110,19 @@ li {
 }
 
 #to-do {
-  background-color:#f55
+  background-color:rgb(255, 88, 88)
 }
 
 #in-do {
-  background-color:#f0e661
+  background-color:#fff461
 }
 
 #do-do {
-  background-color:#add46a
+  background-color:#baff43
 }
 
 @media screen and (max-width:640px) {
   .row{flex-direction:column}
   .next{transform: rotate(90deg)}
+  .quote{font-size: 16px;}
 }
