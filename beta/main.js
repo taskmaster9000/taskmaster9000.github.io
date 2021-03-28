@@ -69,6 +69,7 @@ document.addEventListener("DOMContentLoaded", function() {
     cls.onclick = function() {
         var ddl = document.getElementById("ddl");
         ddl.innerHTML = "";
+        localStorage.removeItem("dodo")
     }
     var clsall = document.getElementById("clear-all");
     clsall.onclick = function() {
