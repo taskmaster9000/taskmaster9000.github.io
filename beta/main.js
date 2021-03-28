@@ -76,9 +76,7 @@ document.addEventListener("DOMContentLoaded", function() {
         refreshnex()
         document.getElementById("idl").innerHTML = "";
         document.getElementById("ddl").innerHTML = "";
-        localStorage.removeItem('todo');
-        localStorage.removeItem('indo');
-        localStorage.removeItem('dodo');
+        localStorage.clear();
     }
 });
 
