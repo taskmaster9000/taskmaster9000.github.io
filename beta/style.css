@@ -8,6 +8,13 @@ a {
   color: #9c9c9c;
 }
 
+h2 {
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
+}
+
 a:hover {
   color: #001418;
 }
@@ -86,11 +93,15 @@ li {
 }
 
 .header {
-  background-color:#ffffff;
+  border-radius: 5px;
   padding:10px 30px;
   color:#001418;
   text-align:center;
-  font-size:120%
+  font-size:120%;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
 }
 
 .row {
@@ -105,6 +116,10 @@ li {
   text-align: center;
   font-size: 16px;
   color: rgb(190, 190, 190);
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
 }
 
 .footer {
