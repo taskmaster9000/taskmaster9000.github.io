@@ -1,0 +1,7 @@
+[
+    {name:"Ayush", task:"task1", status:"todo"},
+    {name:"Ayush", task:"task2", status:"inprogress"},
+    {name:"Ayush", task:"task2.1", status:"inprogress"},
+    {name:"Ayush", task:"task3", status:"done"}
+
+];

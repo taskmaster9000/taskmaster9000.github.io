@@ -6,6 +6,8 @@ tasks = [
 
 ];
 
+
+// This function oads all tasks fron the array above
 function loadTasks() {
     for(i = 0; i < tasks.length; i++){
         entry = tasks[i];
@@ -14,4 +16,10 @@ function loadTasks() {
         document.getElementById(entry.status).innerHTML += output;
     }
 
+}
+
+// This function alowns you to delete a task
+function addtask() {
+    tasks += {name: document.getElementById("name").value, task: document.getElementById("task").value, status: document.getElementById("status").value};
+    // console
 }
