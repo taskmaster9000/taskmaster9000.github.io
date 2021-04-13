@@ -1,4 +1,4 @@
-*{ 
+*{
   font-family:monospace;
   box-sizing:border-box
 }
@@ -73,6 +73,17 @@ li {
 }
 
 .next:hover {
+  color: black;
+}
+
+.prev {
+  min-width:29px;
+  text-align: center;
+  float:right;
+  color:rgb(109, 109, 109);
+}
+
+.prev:hover {
   color: black;
 }
 
@@ -160,5 +171,6 @@ li {
 @media screen and (max-width:640px) {
   .row{flex-direction:column}
   .next{transform: rotate(90deg)}
+  .prev{transform: rotate(90deg)}
   .col{text-align: left;}
 }
